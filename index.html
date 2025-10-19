@@ -1,158 +1,174 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anoopa V | Product Manager Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <style>
-    :root{ --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff; --card:#121936; --glow: 0 10px 30px rgba(110,231,255,.25); }
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,.35), transparent 60%), radial-gradient(1000px 700px at -20% 10%, rgba(110,231,255,.25), transparent 55%), linear-gradient(180deg, #0a0f1e 0%, #0b1020 100%); line-height:1.65; }
-    a{color:var(--brand); text-decoration:none} a:hover{color:#aef2ff}
-    .container{max-width:1120px; margin:0 auto; padding:28px}
-    header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; padding:48px 0 12px; }
-    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #273154; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(18,25,54,.6)}
-    .title{font-size:clamp(28px, 4.6vw, 56px); line-height:1.05; margin:10px 0 8px; font-weight:800; letter-spacing:-.02em}
-    .subtitle{color:var(--muted); font-size:clamp(14px, 1.6vw, 18px)}
-    .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
-    .btn{padding:12px 18px; border-radius:12px; border:1px solid #2a3564; background:linear-gradient(180deg,#1a2246,#151b3b); color:#eaf0ff; font-weight:600; box-shadow: var(--glow)}
-    .btn:hover{transform: translateY(-1px)} .btn.primary{background:linear-gradient(180deg,#6ee7ff,#45bfe0); color:#041019; border-color:#55d6f0} .btn.ghost{background:transparent}
-    .headshot{border-radius:16px; overflow:hidden; background:linear-gradient(135deg, #7c4dff55, #6ee7ff33); border:1px solid #2a3564; box-shadow: var(--glow)}
-    .headshot .circle{aspect-ratio:1/1; width:100%; background: radial-gradient(45% 45% at 60% 40%, #6ee7ff55, transparent 60%), radial-gradient(50% 50% at 30% 70%, #7c4dff55, transparent 60%), linear-gradient(180deg,#121936,#0f1530);} 
-    nav.site{display:flex; gap:12px; margin:8px 0 0}
-    nav.site a{padding:8px 12px; border:1px solid #2a3564; border-radius:10px; background:rgba(18,25,54,.5)}
-    section{margin:28px 0} .panel{background:var(--panel); border:1px solid #24305a; border-radius:16px; padding:22px; box-shadow: var(--glow)} h2.section-title{font-size:22px; letter-spacing:.3px; margin:0 0 14px; font-weight:700}
-    .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px} .xp .where{color:#cfe6ff} .xp .role{font-weight:700} .xp .period{color:var(--muted); font-size:13px} .xp ul{margin:8px 0 0 18px} .xp li{margin:6px 0}
-    .chips{display:flex; flex-wrap:wrap; gap:10px} .chip{padding:8px 12px; border-radius:999px; border:1px solid #2a3564; background:rgba(18,25,54,.7); color:#dbe7ff; font-size:13px}
-    .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px}
-    .card{background:var(--card); border:1px solid #25325c; border-radius:16px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease}
-    .card:hover{transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.35)}
-    .thumb{height:150px; background:linear-gradient(135deg, #7c4dff55, #6ee7ff55);} .thumb img{width:100%; height:100%; object-fit:cover}
-    .card .body{padding:16px}
-    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px} .tag{font-size:11px; padding:4px 8px; border:1px solid #31407a; color:#cfe6ff; border-radius:999px}
-    .split{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
-    .list{margin:6px 0 0 18px} .list li{margin:8px 0}
-    .section-link{display:inline-flex; align-items:center; gap:8px}
-    footer{margin:28px 0 40px; display:flex; justify-content:space-between; align-items:center; color:var(--muted)} .socials{display:flex; gap:14px} .socials a{border:1px solid #2a3564; padding:8px 12px; border-radius:12px; background:rgba(18,25,54,.5)}
-    @media (max-width: 860px){ header.hero{grid-template-columns:1fr} .split{grid-template-columns:1fr} }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header class="hero">
-      <div>
-        <span class="badge">Open to opportunities • Senior Product Manager</span>
-        <h1 class="title">Anoopa V</h1>
-        <p class="subtitle">Product leader with 6+ years driving AI, digital transformation, and analytics initiatives at LTIMindtree and Larsen & Toubro. I build data-informed products that streamline operations, reduce cycle time, and unlock measurable business impact.</p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn ghost" href="#experience">Experience</a>
-          <a class="btn" href="#internship-projects">Internship Projects</a>
-          <a class="btn" href="https://www.linkedin.com/in/anuvkmp" rel="noreferrer" target="_blank">LinkedIn</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anoopa V | Product Manager Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{ --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff; --card:#121936; --glow: 0 10px 30px rgba(110,231,255,.25); }
+      *{box-sizing:border-box}
+      html,body{margin:0}
+      body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,.35), transparent 60%), radial-gradient(1000px 700px at -20% 10%, rgba(110,231,255,.25), transparent 55%), linear-gradient(180deg, #0a0f1e 0%, #0b1020 100%); line-height:1.65; }
+      a{color:var(--brand); text-decoration:none} a:hover{color:#aef2ff}
+      .container{max-width:1120px; margin:0 auto; padding:28px}
+      header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; padding:48px 0 12px; }
+      .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #273154; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(18,25,54,.6)}
+      .title{font-size:clamp(28px, 4.6vw, 56px); line-height:1.05; margin:10px 0 8px; font-weight:800; letter-spacing:-.02em}
+      .subtitle{color:var(--muted); font-size:clamp(14px, 1.6vw, 18px)}
+      .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
+      .btn{padding:12px 18px; border-radius:12px; border:1px solid #2a3564; background:linear-gradient(180deg,#1a2246,#151b3b); color:#eaf0ff; font-weight:600; box-shadow: var(--glow)}
+      .btn:hover{transform: translateY(-1px)} .btn.primary{background:linear-gradient(180deg,#6ee7ff,#45bfe0); color:#041019; border-color:#55d6f0} .btn.ghost{background:transparent}
+      .headshot{border-radius:16px; overflow:hidden; background:linear-gradient(135deg, #7c4dff55, #6ee7ff33); border:1px solid #2a3564; box-shadow: var(--glow)}
+      .headshot .circle{aspect-ratio:1/1; width:100%; background: radial-gradient(45% 45% at 60% 40%, #6ee7ff55, transparent 60%), radial-gradient(50% 50% at 30% 70%, #7c4dff55, transparent 60%), linear-gradient(180deg,#121936,#0f1530);} 
+      nav.site{display:flex; gap:12px; margin:8px 0 0}
+      nav.site a{padding:8px 12px; border:1px solid #2a3564; border-radius:10px; background:rgba(18,25,54,.5)}
+      section{margin:28px 0} .panel{background:var(--panel); border:1px solid #24305a; border-radius:16px; padding:22px; box-shadow: var(--glow)} h2.section-title{font-size:22px; letter-spacing:.3px; margin:0 0 14px; font-weight:700}
+      .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px} .xp .where{color:#cfe6ff} .xp .role{font-weight:700} .xp .period{color:var(--muted); font-size:13px} .xp ul{margin:8px 0 0 18px} .xp li{margin:6px 0}
+      .chips{display:flex; flex-wrap:wrap; gap:10px} .chip{padding:8px 12px; border-radius:999px; border:1px solid #2a3564; background:rgba(18,25,54,.7); color:#dbe7ff; font-size:13px}
+      .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px}
+      .card{background:var(--card); border:1px solid #25325c; border-radius:16px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease}
+      .card:hover{transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.35)}
+      .thumb{height:150px; background:linear-gradient(135deg, #7c4dff55, #6ee7ff55);} .thumb img{width:100%; height:100%; object-fit:cover}
+      .card .body{padding:16px}
+      .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px} .tag{font-size:11px; padding:4px 8px; border:1px solid #31407a; color:#cfe6ff; border-radius:999px}
+      .split{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+      .list{margin:6px 0 0 18px} .list li{margin:8px 0}
+      .section-link{display:inline-flex; align-items:center; gap:8px}
+      footer{margin:28px 0 40px; display:flex; justify-content:space-between; align-items:center; color:var(--muted)} .socials{display:flex; gap:14px} .socials a{border:1px solid #2a3564; padding:8px 12px; border-radius:12px; background:rgba(18,25,54,.5)}
+      @media (max-width: 860px){ header.hero{grid-template-columns:1fr} .split{grid-template-columns:1fr} }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div>
+          <span class="badge">Open to opportunities • Senior Product Manager</span>
+          <h1 class="title">Anoopa V</h1>
+          <p class="subtitle">Product leader with 6+ years driving AI, digital transformation, and analytics initiatives at LTIMindtree and Larsen & Toubro. I build data-informed products that streamline operations, reduce cycle time, and unlock measurable business impact.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#experience">Experience</a>
+            <a class="btn" href="#internship-projects">Internship Projects</a>
+            <a class="btn" href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <nav class="site" aria-label="Site sections">
+            <a href="#projects">AI/ML Projects</a>
+            <a href="#internship-projects">Internship Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+          </nav>
         </div>
-        <nav aria-label="Site sections" class="site">
-          <a href="#projects">AI/ML Projects</a>
-          <a href="#internship-projects">Internship Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-        </nav>
-      </div>
-      <div aria-hidden="true" class="headshot"><div class="circle"></div></div>
-    </header>
+        <div class="headshot" aria-hidden="true"><div class="circle"></div></div>
+      </header>
 
-    <section class="panel" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <!-- Keeping original experience content intentionally omitted for brevity -->
-    </section>
+      <section id="experience" class="panel">
+        <h2 class="section-title">Experience</h2>
+        <!-- Experience content intentionally omitted for brevity -->
+      </section>
 
-    <section aria-label="Skills" class="panel" id="skills">
-      <h2 class="section-title">Skills</h2>
-      <!-- Keeping original skills chips -->
-    </section>
+      <section id="skills" class="panel" aria-label="Skills">
+        <h2 class="section-title">Skills</h2>
+        <!-- Skills chips -->
+      </section>
 
-    <section class="panel" id="projects">
-      <h2 class="section-title">AI/ML Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="thumb">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Abstract AI data visualization" />
-          </div>
-          <div class="body">
-            <h3>GenAI Vendor Intelligence</h3>
-            <p>Rapid prototype combining web scraping and LLM-powered sentiment/pricing analysis to rank vendors; influenced sourcing with ~40% process improvement.</p>
-            <div class="tags"><span class="tag">GenAI</span><span class="tag">NLP</span><span class="tag">Python</span></div>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb">
-            <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop" alt="Contract document with AI overlay" />
-          </div>
-          <div class="body">
-            <h3>AI Contract Analysis MVP</h3>
-            <p>LLM-driven contract review with risk prediction and doc chatbot; reduced cycle time by 20% via iterative user feedback.</p>
-            <div class="tags"><span class="tag">LLM</span><span class="tag">Product Discovery</span><span class="tag">UX</span></div>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="Inventory/warehouse analytics dashboard" />
-          </div>
-          <div class="body">
-            <h3>No‑Code Inventory Platform</h3>
-            <p>Configurable workflows and adaptive mobile app; enabled $6M annual savings and better visibility across sites.</p>
-            <div class="tags"><span class="tag">Product Strategy</span><span class="tag">Go‑to‑Market</span><span class="tag">Analytics</span></div>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb">
-            <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=1200&auto=format&fit=crop" alt="Factory production line with computer vision overlay" />
-          </div>
-          <div class="body">
-            <h3>Computer Vision for Production Tracking</h3>
-            <p>Deployed on-site CV pipeline for object detection and throughput tracking; improved productivity by 10%.</p>
-            <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Operations</span><span class="tag">Analytics</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+      <section id="projects" class="panel">
+        <h2 class="section-title">AI/ML Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="thumb"><img alt="Abstract AI data visualization" /></div>
+            <div class="body">
+              GenAI Vendor Intelligence
+              Rapid prototype combining web scraping and LLM-powered sentiment/pricing analysis to rank vendors; influenced sourcing with ~40% process improvement.
+              <div class="tags"><span class="tag">GenAI</span><span class="tag">NLP</span><span class="tag">Python</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img alt="Contract document with AI overlay" /></div>
+            <div class="body">
+              AI Contract Analysis MVP
+              LLM-driven contract review with risk prediction and doc chatbot; reduced cycle time by 20% via iterative user feedback.
+              <div class="tags"><span class="tag">LLM</span><span class="tag">Product Discovery</span><span class="tag">UX</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img alt="Inventory/warehouse analytics dashboard" /></div>
+            <div class="body">
+              No‑Code Inventory Platform
+              Configurable workflows and adaptive mobile app; enabled $6M annual savings and better visibility across sites.
+              <div class="tags"><span class="tag">Product Strategy</span><span class="tag">Go‑to‑Market</span><span class="tag">Analytics</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img alt="Factory production line with computer vision overlay" /></div>
+            <div class="body">
+              Computer Vision for Production Tracking
+              Deployed on-site CV pipeline for object detection and throughput tracking; improved productivity by 10%.
+              <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Operations</span><span class="tag">Analytics</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="panel" id="internship-projects">
-      <h2 class="section-title">Internship Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="thumb">
-            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=1200&auto=format&fit=crop" alt="Eggs on a conveyor in a factory" />
+      <section id="internship-projects" class="panel">
+        <h2 class="section-title">Internship Projects</h2>
+        <!-- Split into two clear subsections -->
+        <div class="split">
+          <div>
+            <h3 class="section-title" style="font-size:18px">Artificial Intelligence Projects</h3>
+            <div class="grid">
+              <article class="card">
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1577985759186-0854dfd3f7d6?q=80&w=1200&auto=format&fit=crop" alt="Eggs on a production line" /></div>
+                <div class="body">
+                  Egg detection and tracking at factory with computer vision
+                  Designed and deployed a CV pipeline to detect, track, and quantify eggs on conveyor lines in real time to improve QA throughput.
+                  <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Tracking</span><span class="tag">Python</span></div>
+                </div>
+              </article>
+              <article class="card">
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" alt="Child silhouette with puzzle/brain concept" /></div>
+                <div class="body">
+                  Autism Detection in children with computer vision
+                  Built a CV-based screening prototype leveraging key facial/behavioral landmarks for early risk flags; designed with privacy-first principles.
+                  <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Healthcare</span><span class="tag">Prototype</span></div>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="body">
-            <h3>Quality Inspection Conveyor</h3>
-            <p>Designed and tested a computer-vision aided conveyor QA prototype to flag defects in real time, improving sampling efficiency and accuracy.</p>
-            <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Prototype</span><span class="tag">Python</span></div>
+          <div>
+            <h3 class="section-title" style="font-size:18px">Data Science Projects</h3>
+            <div class="grid">
+              <article class="card">
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Shield and digital AI security concept" /></div>
+                <div class="body">
+                  Fraud detection in procurement with ML
+                  Built supervised models and anomaly detection on P2P data to flag suspicious vendors/POs; improved precision of audits and recovered leakage.
+                  <div class="tags"><span class="tag">Machine Learning</span><span class="tag">Anomaly Detection</span><span class="tag">Python/SQL</span></div>
+                </div>
+              </article>
+              <article class="card">
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop" alt="Medical supplies and hospital analytics" /></div>
+                <div class="body">
+                  Medical Inventory Optimization using ARIMA
+                  Time-series forecasting of consumption and lead times to optimize reorder points and reduce stockouts/overstock.
+                  <div class="tags"><span class="tag">Time Series</span><span class="tag">ARIMA</span><span class="tag">Operations</span></div>
+                </div>
+              </article>
+            </div>
           </div>
-        </article>
-        <article class="card">
-          <div class="thumb">
-            <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=1200&auto=format&fit=crop" alt="Analytics dashboard" />
-          </div>
-          <div class="body">
-            <h3>Operations Analytics Dashboard</h3>
-            <p>Built a lightweight dashboard to monitor process KPIs and bottlenecks, enabling data-driven standups and faster interventions.</p>
-            <div class="tags"><span class="tag">Analytics</span><span class="tag">Dashboards</span><span class="tag">SQL</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <footer>
-      <span>© 2025 Anoopa V</span>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="#projects">Projects</a>
-      </div>
-    </footer>
-  </div>
-</body>
+      <footer>
+        © 2025 Anoopa V
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
