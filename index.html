@@ -1,211 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anoopa V | Product Manager Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-      :root{
-        --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff;
-        --card:#121936; --glow: 0 10px 30px rgba(110, 231, 255, .25);
-      }
-      *{box-sizing:border-box}
-      html,body{margin:0}
-      body{
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        color:var(--text);
-        background: radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,.35), transparent 60%),
-                    radial-gradient(1000px 700px at -20% 10%, rgba(110,231,255,.25), transparent 55%),
-                    linear-gradient(180deg, #0a0f1e 0%, #0b1020 100%);
-        line-height:1.65;
-      }
-      a{color:var(--brand); text-decoration:none}
-      a:hover{color:#aef2ff}
-      .container{max-width:1120px; margin:0 auto; padding:28px}
-      /* Header */
-      header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; padding:48px 0 12px; }
-      .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #273154; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(18,25,54,.6)}
-      .title{font-size:clamp(28px, 4.6vw, 56px); line-height:1.05; margin:10px 0 8px; font-weight:800; letter-spacing:-.02em}
-      .subtitle{color:var(--muted); font-size:clamp(14px, 1.6vw, 18px)}
-      .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
-      .btn{padding:12px 18px; border-radius:12px; border:1px solid #2a3564; background:linear-gradient(180deg,#1a2246,#151b3b); color:#eaf0ff; font-weight:600; box-shadow: var(--glow)}
-      .btn:hover{transform: translateY(-1px)}
-      .btn.primary{background:linear-gradient(180deg,#6ee7ff,#45bfe0); color:#041019; border-color:#55d6f0}
-      .btn.ghost{background:transparent}
-      .headshot{border-radius:16px; overflow:hidden; background:linear-gradient(135deg, #7c4dff55, #6ee7ff33); border:1px solid #2a3564; box-shadow: var(--glow)}
-      .headshot .circle{aspect-ratio:1/1; width:100%; background:
-        radial-gradient(45% 45% at 60% 40%, #6ee7ff55, transparent 60%),
-        radial-gradient(50% 50% at 30% 70%, #7c4dff55, transparent 60%),
-        linear-gradient(180deg,#121936,#0f1530);} 
-      /* Sections */
-      section{margin:28px 0}
-      .panel{background:var(--panel); border:1px solid #24305a; border-radius:16px; padding:22px; box-shadow: var(--glow)}
-      h2.section-title{font-size:22px; letter-spacing:.3px; margin:0 0 14px; font-weight:700}
-      /* Experience */
-      .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px}
-      .xp .where{color:#cfe6ff}
-      .xp .role{font-weight:700}
-      .xp .period{color:var(--muted); font-size:13px}
-      .xp ul{margin:8px 0 0 18px}
-      .xp li{margin:6px 0}
-      /* Skills */
-      .chips{display:flex; flex-wrap:wrap; gap:10px}
-      .chip{padding:8px 12px; border-radius:999px; border:1px solid #2a3564; background:rgba(18,25,54,.7); color:#dbe7ff; font-size:13px}
-      /* Projects */
-      .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px}
-      .card{background:var(--card); border:1px solid #25325c; border-radius:16px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease}
-      .card:hover{transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.35)}
-      .thumb{height:150px; background:linear-gradient(135deg, #7c4dff55, #6ee7ff55)}
-      .card .body{padding:16px}
-      .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
-      .tag{font-size:11px; padding:4px 8px; border:1px solid #31407a; color:#cfe6ff; border-radius:999px}
-      /* Footer */
-      footer{margin:28px 0 40px; display:flex; justify-content:space-between; align-items:center; color:var(--muted)}
-      .socials{display:flex; gap:14px}
-      .socials a{border:1px solid #2a3564; padding:8px 12px; border-radius:12px; background:rgba(18,25,54,.5)}
-      @media (max-width: 860px){ header.hero{grid-template-columns:1fr} }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header class="hero">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anoopa V | Product Manager Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{ --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff; --card:#121936; --glow: 0 10px 30px rgba(110,231,255,.25); }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,.35), transparent 60%), radial-gradient(1000px 700px at -20% 10%, rgba(110,231,255,.25), transparent 55%), linear-gradient(180deg, #0a0f1e 0%, #0b1020 100%); line-height:1.65; }
+    a{color:var(--brand); text-decoration:none} a:hover{color:#aef2ff}
+    .container{max-width:1120px; margin:0 auto; padding:28px}
+    header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; padding:48px 0 12px; }
+    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #273154; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(18,25,54,.6)}
+    .title{font-size:clamp(28px, 4.6vw, 56px); line-height:1.05; margin:10px 0 8px; font-weight:800; letter-spacing:-.02em}
+    .subtitle{color:var(--muted); font-size:clamp(14px, 1.6vw, 18px)}
+    .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
+    .btn{padding:12px 18px; border-radius:12px; border:1px solid #2a3564; background:linear-gradient(180deg,#1a2246,#151b3b); color:#eaf0ff; font-weight:600; box-shadow: var(--glow)}
+    .btn:hover{transform: translateY(-1px)} .btn.primary{background:linear-gradient(180deg,#6ee7ff,#45bfe0); color:#041019; border-color:#55d6f0} .btn.ghost{background:transparent}
+    .headshot{border-radius:16px; overflow:hidden; background:linear-gradient(135deg, #7c4dff55, #6ee7ff33); border:1px solid #2a3564; box-shadow: var(--glow)}
+    .headshot .circle{aspect-ratio:1/1; width:100%; background: radial-gradient(45% 45% at 60% 40%, #6ee7ff55, transparent 60%), radial-gradient(50% 50% at 30% 70%, #7c4dff55, transparent 60%), linear-gradient(180deg,#121936,#0f1530);} 
+    section{margin:28px 0} .panel{background:var(--panel); border:1px solid #24305a; border-radius:16px; padding:22px; box-shadow: var(--glow)} h2.section-title{font-size:22px; letter-spacing:.3px; margin:0 0 14px; font-weight:700}
+    .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px} .xp .where{color:#cfe6ff} .xp .role{font-weight:700} .xp .period{color:var(--muted); font-size:13px} .xp ul{margin:8px 0 0 18px} .xp li{margin:6px 0}
+    .chips{display:flex; flex-wrap:wrap; gap:10px} .chip{padding:8px 12px; border-radius:999px; border:1px solid #2a3564; background:rgba(18,25,54,.7); color:#dbe7ff; font-size:13px}
+    .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px}
+    .card{background:var(--card); border:1px solid #25325c; border-radius:16px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.35)}
+    .thumb{height:150px; background:linear-gradient(135deg, #7c4dff55, #6ee7ff55);}
+    .thumb img{width:100%; height:100%; object-fit:cover}
+    .card .body{padding:16px}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px} .tag{font-size:11px; padding:4px 8px; border:1px solid #31407a; color:#cfe6ff; border-radius:999px}
+    .split{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+    .list{margin:6px 0 0 18px} .list li{margin:8px 0}
+    .section-link{display:inline-flex; align-items:center; gap:8px}
+    footer{margin:28px 0 40px; display:flex; justify-content:space-between; align-items:center; color:var(--muted)} .socials{display:flex; gap:14px} .socials a{border:1px solid #2a3564; padding:8px 12px; border-radius:12px; background:rgba(18,25,54,.5)}
+    @media (max-width: 860px){ header.hero{grid-template-columns:1fr} .split{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <span class="badge">Open to opportunities • Senior Product Manager</span>
+        <h1 class="title">Anoopa V</h1>
+        <p class="subtitle">Product leader with 6+ years driving AI, digital transformation, and analytics initiatives at LTIMindtree and Larsen & Toubro. I build data-informed products that streamline operations, reduce cycle time, and unlock measurable business impact.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#experience">Experience</a>
+          <a class="btn" href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div aria-hidden="true" class="headshot"><div class="circle"></div></div>
+    </header>
+
+    <section class="panel" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="xp">
+        <div class="where">LTIMindtree</div>
         <div>
-          <span class="badge">Open to opportunities • Senior Product Manager</span>
-          <h1 class="title">Anoopa V</h1>
-          <p class="subtitle">Product leader with 6+ years driving AI, digital transformation, and analytics initiatives at LTIMindtree and Larsen & Toubro. I build data-informed products that streamline operations, reduce cycle time, and unlock measurable business impact.</p>
-          <div class="cta">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" href="#experience">Experience</a>
-            <a class="btn" href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div class="role">Senior Product Manager</div>
+          <div class="period">2025 – 2025</div>
+          <ul>
+            <li>Launched a GenAI vendor analysis prototype in 2 months using web scraping and sentiment scoring, improving procurement decisions by ~40%.</li>
+            <li>Built an MVP AI platform (LLMs) for automated contract analysis, risk prediction, and document chatbot—reduced contract cycle time by 20% via iterative user feedback.</li>
+            <li>Defined roadmap for an Incident Management Framework with architects and engineers, cutting case resolution time by 30%.</li>
+            <li>Drove UI/UX improvements to a safety app by removing unused features and streamlining navigation; increased adoption from 40% to 90%.</li>
+          </ul>
+        </div>
+        <div class="where">Larsen &amp; Toubro (L&amp;T)</div>
+        <div>
+          <div class="role">Product Manager, Corporate Digital</div>
+          <div class="period">2021 – 2025</div>
+          <ul>
+            <li>Led 15 cross-functional initiatives across Operations, Contracts, Safety, and Sales.</li>
+            <li>Guided ML engineers to deliver a computer vision solution for production tracking (preprocessing, object detection, on-site deployment) raising factory productivity by 10%.</li>
+            <li>Developed a go-to-market for a no-code inventory platform with configurable workflows and adaptive mobile app; generated $6M annual savings.</li>
+            <li>Integrated IoT and fuel sensors into construction machines and launched a real-time monitoring portal—improved utilization by 8% and reduced pilferage by 12%.</li>
+            <li>Replaced high-risk tasks with vendor robotics; automated reservoir painting with wall-climbing robots, eliminating scaffolding and cutting time by 80% (saving ~$35M).</li>
+            <li>Unified three siloed apps via APIs; defined KPIs, ran RCA and risk assessment, and built a dashboard to monitor 500 construction jobs.</li>
+          </ul>
+        </div>
+        <div class="where">Larsen &amp; Toubro (L&amp;T)</div>
+        <div>
+          <div class="role">Senior Financial Analyst</div>
+          <div class="period">2020 – 2021</div>
+          <ul>
+            <li>Launched a bid management portal connecting Contracts, Finance, Legal, and Audit; decreased pre-bid cycle time by 30%.</li>
+            <li>Conducted market and competitor pricing analyses; recommended changes that improved contract-to-order turnover by 15%.</li>
+          </ul>
+        </div>
+        <div class="where">Larsen &amp; Toubro (L&amp;T)</div>
+        <div>
+          <div class="role">Business Financials Management, Trainee</div>
+          <div class="period">2019 – 2020</div>
+          <ul>
+            <li>Monitored performance KPIs (collections, cash flow, price variation, sales vs. cost, gross margin) and reported to VP, contributing to ~$50M profitability increase.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="chips">
+        <span class="chip">Product Strategy &amp; Roadmaps</span>
+        <span class="chip">AI/ML Product Development</span>
+        <span class="chip">GenAI, LLMs, NLP</span>
+        <span class="chip">Computer Vision</span>
+        <span class="chip">Analytics &amp; Experimentation</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Python</span>
+        <span class="chip">Tableau</span>
+        <span class="chip">Agile • Jira</span>
+        <span class="chip">User Research &amp; UX</span>
+        <span class="chip">Feature Prioritization</span>
+        <span class="chip">Data Privacy &amp; Protection</span>
+      </div>
+    </section>
+
+    <section class="panel" id="projects">
+      <h2 class="section-title">AI/ML Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1551281044-8f9e86ccae6e?q=80&w=1200&auto=format&fit=crop" alt="Abstract AI data visualization" /></div>
+          <div class="body">
+            <h3>GenAI Vendor Intelligence</h3>
+            <p>Rapid prototype combining web scraping and LLM-powered sentiment/pricing analysis to rank vendors; influenced sourcing with ~40% process improvement.</p>
+            <div class="tags"><span class="tag">GenAI</span><span class="tag">NLP</span><span class="tag">Python</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop" alt="Contract document with AI overlay" /></div>
+          <div class="body">
+            <h3>AI Contract Analysis MVP</h3>
+            <p>LLM-driven contract review with risk prediction and doc chatbot; reduced cycle time by 20% via iterative user feedback.</p>
+            <div class="tags"><span class="tag">LLM</span><span class="tag">Product Discovery</span><span class="tag">UX</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?q=80&w=1200&auto=format&fit=crop" alt="No-code platform UI tiles" /></div>
+          <div class="body">
+            <h3>No‑Code Inventory Platform</h3>
+            <p>Configurable workflows and adaptive mobile app; enabled $6M annual savings and better visibility across sites.</p>
+            <div class="tags"><span class="tag">Product Strategy</span><span class="tag">Go‑to‑Market</span><span class="tag">Analytics</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop" alt="Factory production line with computer vision overlay" /></div>
+          <div class="body">
+            <h3>Computer Vision for Production Tracking</h3>
+            <p>Deployed on-site CV pipeline for object detection and throughput tracking; improved productivity by 10%.</p>
+            <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Operations</span><span class="tag">Analytics</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="intern-projects">
+      <h2 class="section-title"><a class="section-link" href="https://www.linkedin.com/company/13276009/" target="_blank" rel="noreferrer">Data Science and AI Internship Projects</a></h2>
+      <div class="split">
+        <div class="panel" style="background:rgba(18,25,54,.5)">
+          <h3>Artificial Intelligence projects</h3>
+          <ul class="list">
+            <li>Egg detection and tracking at factory with computer vision</li>
+            <li>Autism Detection in children with computer vision</li>
+          </ul>
+          <div class="grid">
+            <article class="card"><div class="thumb"><img src="https://images.unsplash.com/photo-1506976785307-8732e854ad89?q=80&w=1200&auto=format&fit=crop" alt="Eggs on production line representing detection" /></div></article>
+            <article class="card"><div class="thumb"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop" alt="Child silhouette and puzzle concept for autism" /></div></article>
           </div>
         </div>
-        <div class="headshot" aria-hidden="true">
-          <div class="circle"></div>
-        </div>
-      </header>
-
-      <section class="panel" id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="xp">
-          <div class="where">LTIMindtree</div>
-          <div>
-            <div class="role">Senior Product Manager</div>
-            <div class="period">2025 – 2025</div>
-            <ul>
-              <li>Launched a GenAI vendor analysis prototype in 2 months using web scraping and sentiment scoring, improving procurement decisions by ~40%.</li>
-              <li>Built an MVP AI platform (LLMs) for automated contract analysis, risk prediction, and document chatbot—reduced contract cycle time by 20% via iterative user feedback.</li>
-              <li>Defined roadmap for an Incident Management Framework with architects and engineers, cutting case resolution time by 30%.</li>
-              <li>Drove UI/UX improvements to a safety app by removing unused features and streamlining navigation; increased adoption from 40% to 90%.</li>
-            </ul>
-          </div>
-
-          <div class="where">Larsen &amp; Toubro (L&amp;T)</div>
-          <div>
-            <div class="role">Product Manager, Corporate Digital</div>
-            <div class="period">2021 – 2025</div>
-            <ul>
-              <li>Led 15 cross-functional initiatives across Operations, Contracts, Safety, and Sales.</li>
-              <li>Guided ML engineers to deliver a computer vision solution for production tracking (preprocessing, object detection, on-site deployment) raising factory productivity by 10%.</li>
-              <li>Developed a go-to-market for a no-code inventory platform with configurable workflows and adaptive mobile app; generated $6M annual savings.</li>
-              <li>Integrated IoT and fuel sensors into construction machines and launched a real-time monitoring portal—improved utilization by 8% and reduced pilferage by 12%.</li>
-              <li>Replaced high-risk tasks with vendor robotics; automated reservoir painting with wall-climbing robots, eliminating scaffolding and cutting time by 80% (saving ~$35M).</li>
-              <li>Unified three siloed apps via APIs; defined KPIs, ran RCA and risk assessment, and built a dashboard to monitor 500 construction jobs.</li>
-            </ul>
-          </div>
-
-          <div class="where">Larsen &amp; Toubro (L&amp;T)</div>
-          <div>
-            <div class="role">Senior Financial Analyst</div>
-            <div class="period">2020 – 2021</div>
-            <ul>
-              <li>Launched a bid management portal connecting Contracts, Finance, Legal, and Audit; decreased pre-bid cycle time by 30%.</li>
-              <li>Conducted market and competitor pricing analyses; recommended changes that improved contract-to-order turnover by 15%.</li>
-            </ul>
-          </div>
-
-          <div class="where">Larsen &amp; Toubro (L&amp;T)</div>
-          <div>
-            <div class="role">Business Financials Management, Trainee</div>
-            <div class="period">2019 – 2020</div>
-            <ul>
-              <li>Monitored performance KPIs (collections, cash flow, price variation, sales vs. cost, gross margin) and reported to VP, contributing to ~$50M profitability increase.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel" aria-label="Skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="chips">
-          <span class="chip">Product Strategy &amp; Roadmaps</span>
-          <span class="chip">AI/ML Product Development</span>
-          <span class="chip">GenAI, LLMs, NLP</span>
-          <span class="chip">Computer Vision</span>
-          <span class="chip">Analytics &amp; Experimentation</span>
-          <span class="chip">SQL</span>
-          <span class="chip">Python</span>
-          <span class="chip">Tableau</span>
-          <span class="chip">Agile • Jira</span>
-          <span class="chip">User Research &amp; UX</span>
-          <span class="chip">Feature Prioritization</span>
-          <span class="chip">Data Privacy &amp; Protection</span>
-        </div>
-      </section>
-
-      <section class="panel" id="projects">
-        <h2 class="section-title">Selected Projects</h2>
-        <div class="grid">
-          <article class="card">
-            <div class="thumb" style="background-image: radial-gradient(60% 60% at 70% 30%, #6ee7ff66, transparent 60%), radial-gradient(50% 50% at 20% 70%, #7c4dff66, transparent 60%), linear-gradient(180deg,#142049,#0f1530);"></div>
-            <div class="body">
-              <strong>GenAI Vendor Intelligence</strong>
-              <div>Rapid prototype combining web scraping and LLM-powered sentiment/pricing analysis to rank vendors; influenced sourcing with ~40% process improvement.</div>
-              <div class="tags"><span class="tag">GenAI</span><span class="tag">NLP</span><span class="tag">Python</span></div>
-            </div>
-          </article>
-          <article class="card">
-            <div class="thumb" style="background-image: radial-gradient(60% 60% at 70% 30%, #7c4dff66, transparent 60%), radial-gradient(50% 50% at 20% 70%, #6ee7ff66, transparent 60%), linear-gradient(180deg,#142049,#0f1530);"></div>
-            <div class="body">
-              <strong>AI Contract Analysis MVP</strong>
-              <div>LLM-driven contract review with risk prediction and doc chatbot; reduced cycle time by 20% via iterative user feedback.</div>
-              <div class="tags"><span class="tag">LLM</span><span class="tag">Product Discovery</span><span class="tag">UX</span></div>
-            </div>
-          </article>
-          <article class="card">
-            <div class="thumb" style="background-image: radial-gradient(60% 60% at 70% 30%, #6ee7ff66, transparent 60%), radial-gradient(50% 50% at 20% 70%, #7c4dff66, transparent 60%), linear-gradient(180deg,#142049,#0f1530);"></div>
-            <div class="body">
-              <strong>No‑Code Inventory Platform</strong>
-              <div>Configurable workflows and adaptive mobile app; enabled $6M annual savings and better visibility across sites.</div>
-              <div class="tags"><span class="tag">Product Strategy</span><span class="tag">Go‑to‑Market</span><span class="tag">Analytics</span></div>
-            </div>
-          </article>
-          <article class="card">
-            <div class="thumb" style="background-image: radial-gradient(60% 60% at 70% 30%, #7c4dff66, transparent 60%), radial-gradient(50% 50% at 20% 70%, #6ee7ff66, transparent 60%), linear-gradient(180deg,#142049,#0f1530);"></div>
-            <div class="body">
-              <strong>Computer Vision for Production Tracking</strong>
-              <div>Deployed on-site CV pipeline for object detection and throughput tracking; improved productivity by 10%.</div>
-              <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Operations</span><span class="tag">Analytics</span></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div>Let’s connect about product roles, AI initiatives, and digital transformation.</div>
-        <div class="socials">
-          <a href="mailto:AnoopaVinodkenan-flagler.unc.edu" target="_blank" rel="noreferrer">Email</a>
-          <a href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/anuvkmp" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </section>
-
-      <footer>
-        <small>© <span id="year"></span> Anoopa V. Built with ❤️ and shipped on GitHub Pages.</small>
-        <div><a href="#top">Back to top ↑</a></div>
-      </footer>
-    </div>
-    <script>document.getElementById('year').
+        <div class="panel" style="background:rgba(18,25,54,.5)">
+          <h3>Data Science Projects</h
