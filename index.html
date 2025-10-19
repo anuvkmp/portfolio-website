@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Anoopa V | Product Manager Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
     <style>
       :root{ --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff; --card:#121936; --glow: 0 10px 30px rgba(110,231,255,.25); }
       *{box-sizing:border-box}
@@ -34,52 +32,49 @@
       .card:hover{transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.35)}
       .thumb{height:150px; background:linear-gradient(135deg, #7c4dff55, #6ee7ff55);} .thumb img{width:100%; height:100%; object-fit:cover}
       .card .body{padding:16px}
-      .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px} .tag{font-size:11px; padding:4px 8px; border:1px solid #31407a; color:#cfe6ff; border-radius:999px}
       .split{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
       .list{margin:6px 0 0 18px} .list li{margin:8px 0}
       .section-link{display:inline-flex; align-items:center; gap:8px}
       footer{margin:28px 0 40px; display:flex; justify-content:space-between; align-items:center; color:var(--muted)} .socials{display:flex; gap:14px} .socials a{border:1px solid #2a3564; padding:8px 12px; border-radius:12px; background:rgba(18,25,54,.5)}
       @media (max-width: 860px){ header.hero{grid-template-columns:1fr} .split{grid-template-columns:1fr} }
     </style>
-  </head>
-  <body>
-    <div class="container">
+
+  <div class="container">
       <header class="hero">
         <div>
           <span class="badge">Open to opportunities • Senior Product Manager</span>
           <h1 class="title">Anoopa V</h1>
-          <p class="subtitle">Product leader with 6+ years driving AI, digital transformation, and analytics initiatives at LTIMindtree and Larsen & Toubro. I build data-informed products that streamline operations, reduce cycle time, and unlock measurable business impact.</p>
+          <p class="subtitle">Product leader with 6+ years driving AI, digital transformation, and analytics initiatives at LTIMindtree and Larsen &amp; Toubro. I build data-informed products that streamline operations, reduce cycle time, and unlock measurable business impact.</p>
           <div class="cta">
             <a class="btn primary" href="#projects">View Projects</a>
             <a class="btn ghost" href="#experience">Experience</a>
             <a class="btn" href="#internship-projects">Internship Projects</a>
-            <a class="btn" href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://www.linkedin.com/in/anuvkmp" rel="noreferrer" target="_blank">LinkedIn</a>
           </div>
-          <nav class="site" aria-label="Site sections">
+          <nav aria-label="Site sections" class="site">
             <a href="#projects">AI/ML Projects</a>
+            <a href="#applications-robotics">Applications and Robotics</a>
             <a href="#internship-projects">Internship Projects</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
           </nav>
         </div>
-        <div class="headshot" aria-hidden="true"><div class="circle"></div></div>
+        <div aria-hidden="true" class="headshot"><div class="circle"></div></div>
       </header>
 
-      <section id="experience" class="panel">
+      <section class="panel" id="experience">
         <h2 class="section-title">Experience</h2>
-        <!-- Experience content intentionally omitted for brevity -->
       </section>
 
-      <section id="skills" class="panel" aria-label="Skills">
+      <section aria-label="Skills" class="panel" id="skills">
         <h2 class="section-title">Skills</h2>
-        <!-- Skills chips -->
       </section>
 
-      <section id="projects" class="panel">
+      <section class="panel" id="projects">
         <h2 class="section-title">AI/ML Projects</h2>
         <div class="grid">
           <article class="card">
-            <div class="thumb"><img alt="Abstract AI data visualization" /></div>
+            <div class="thumb"><img alt="Abstract AI data visualization"/></div>
             <div class="body">
               GenAI Vendor Intelligence
               Rapid prototype combining web scraping and LLM-powered sentiment/pricing analysis to rank vendors; influenced sourcing with ~40% process improvement.
@@ -87,7 +82,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="thumb"><img alt="Contract document with AI overlay" /></div>
+            <div class="thumb"><img alt="Contract document with AI overlay"/></div>
             <div class="body">
               AI Contract Analysis MVP
               LLM-driven contract review with risk prediction and doc chatbot; reduced cycle time by 20% via iterative user feedback.
@@ -95,7 +90,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="thumb"><img alt="Inventory/warehouse analytics dashboard" /></div>
+            <div class="thumb"><img alt="Inventory/warehouse analytics dashboard"/></div>
             <div class="body">
               No‑Code Inventory Platform
               Configurable workflows and adaptive mobile app; enabled $6M annual savings and better visibility across sites.
@@ -103,7 +98,7 @@
             </div>
           </article>
           <article class="card">
-            <div class="thumb"><img alt="Factory production line with computer vision overlay" /></div>
+            <div class="thumb"><img alt="Factory production line with computer vision overlay"/></div>
             <div class="body">
               Computer Vision for Production Tracking
               Deployed on-site CV pipeline for object detection and throughput tracking; improved productivity by 10%.
@@ -113,15 +108,26 @@
         </div>
       </section>
 
-      <section id="internship-projects" class="panel">
+      <section class="panel" id="applications-robotics">
+        <h2 class="section-title">Applications and Robotics</h2>
+        <ul class="list">
+          <li>Integrated IoT and fuel sensors into construction machines and developed a web portal for real-time monitoring, improving machine utilization by 8% and reducing pilferage by 12%.</li>
+          <li>Replaced high-risk reservoir painting activities with remote-operated wall-climbing robots in collaboration with vendors, eliminating scaffolding and reducing painting time by 80% while saving $35M.</li>
+          <li>Integrated three siloed applications using APIs, defined KPIs to evaluate project progress, root cause analysis, and risk assessment, and developed a dashboard to showcase generated insights, supporting client’s 500+ construction jobs.</li>
+          <li>Developed and implemented VR-based training modules for site labor, enabling safety protocol training with live simulation.</li>
+          <li>Created drone-based progress monitoring with an analytics dashboard for construction projects.</li>
+          <li>Built a prospect tracker app and website for business development teams to monitor client interaction, improving customer relationships.</li>
+        </ul>
+      </section>
+
+      <section class="panel" id="internship-projects">
         <h2 class="section-title">Internship Projects</h2>
-        <!-- Split into two clear subsections -->
         <div class="split">
           <div>
             <h3 class="section-title" style="font-size:18px">Artificial Intelligence Projects</h3>
             <div class="grid">
               <article class="card">
-                <div class="thumb"><img src="https://images.unsplash.com/photo-1577985759186-0854dfd3f7d6?q=80&w=1200&auto=format&fit=crop" alt="Eggs on a production line" /></div>
+                <div class="thumb"><img alt="Eggs on a production line"/></div>
                 <div class="body">
                   Egg detection and tracking at factory with computer vision
                   Designed and deployed a CV pipeline to detect, track, and quantify eggs on conveyor lines in real time to improve QA throughput.
@@ -129,7 +135,7 @@
                 </div>
               </article>
               <article class="card">
-                <div class="thumb"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" alt="Child silhouette with puzzle/brain concept" /></div>
+                <div class="thumb"><img alt="Child silhouette with puzzle/brain concept"/></div>
                 <div class="body">
                   Autism Detection in children with computer vision
                   Built a CV-based screening prototype leveraging key facial/behavioral landmarks for early risk flags; designed with privacy-first principles.
@@ -142,7 +148,7 @@
             <h3 class="section-title" style="font-size:18px">Data Science Projects</h3>
             <div class="grid">
               <article class="card">
-                <div class="thumb"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Shield and digital AI security concept" /></div>
+                <div class="thumb"><img alt="Shield and digital AI security concept"/></div>
                 <div class="body">
                   Fraud detection in procurement with ML
                   Built supervised models and anomaly detection on P2P data to flag suspicious vendors/POs; improved precision of audits and recovered leakage.
@@ -150,7 +156,7 @@
                 </div>
               </article>
               <article class="card">
-                <div class="thumb"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop" alt="Medical supplies and hospital analytics" /></div>
+                <div class="thumb"><img alt="Medical supplies and hospital analytics"/></div>
                 <div class="body">
                   Medical Inventory Optimization using ARIMA
                   Time-series forecasting of consumption and lead times to optimize reorder points and reduce stockouts/overstock.
@@ -165,10 +171,8 @@
       <footer>
         © 2025 Anoopa V
         <div class="socials">
-          <a href="https://www.linkedin.com/in/anuvkmp" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/anuvkmp" rel="noreferrer" target="_blank">LinkedIn</a>
           <a href="#projects">Projects</a>
         </div>
       </footer>
     </div>
-  </body>
-</html>
