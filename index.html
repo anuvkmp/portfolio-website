@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anoopa Vinod | Product Manager Portfolio</title>
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
   <style>
     :root{
  --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff; --card:#121936; --glow: 0 10px 30px rgba(110,231,255,.25); }
     *{box-sizing:border-box}
     html,body{margin:0}
     body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,.35), transparent 60%), radial-gradient(1000px 700px at -20% 10%, rgba(110,231,255,.25), transparent 55%), linear-gradient(180deg, #0a0f1e 0%, #0b1020 100%); line-height:1.65; }
-    a{color:var(--brand); text-decoration:none}
- a:hover{color:#aef2ff}
+    a{color:var(--brand); text-decoration:none} a:hover{color:#aef2ff}
     .container{max-width:1120px; margin:0 auto; padding:28px}
     header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; padding:48px 0 12px; }
     .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #273154; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(18,25,54,.6)}
@@ -33,175 +32,119 @@
     section{margin:28px 0}
  .panel{background:var(--panel); border:1px solid #24305a; border-radius:16px; padding:22px; box-shadow: var(--glow)}
  h2.section-title{font-size:22px; letter-spacing:.3px; margin:0 0 14px; font-weight:700}
-    .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px}
- .xp .where{color:#cfe6ff}
- .xp .role{font-weight:700}
- .xp .period{color:var(--muted); font-size:13px}
- .xp ul{margin:8px 0 0 18px}
- .xp li{margin:6px 0}
-    .chips{display:flex; flex-wrap:wrap; gap:10px}
- .chip{padding:8px 12px; border-radius:999px; border:1px solid #2a3564; background:rgba(18,25,54,.7); color:#dbe7ff; font-size:13px}
-    .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px}
-    .card{background:var(--card); border:1px solid #25325c; border-radius:16px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease}
-    .card:hover{transform: translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.35)}
-    .thumb{height:150px; background:linear-gradient(135deg, #7c4dff55, #6ee7ff55);}
- .thumb img{width:100%; height:100%; object-fit:cover}
-    .card .body{padding:16px}
-    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
- .tag{font-size:11px; padding:4px 8px; border:1px solid #31407a; color:#cfe6ff; border-radius:999px}
+    .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px; margin:0 0 22px; padding:0}
+    .xp .when{color:var(--muted); font-size:14px}
+    .xp .what{color:var(--text)}
+    .role{font-weight:600; margin:0 0 2px}
+    .company{color:var(--muted); font-size:15px; margin:0 0 6px}
+    .desc{font-size:15px; margin:8px 0}
+    .skills{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px}
+    .tag{padding:4px 10px; border-radius:999px; font-size:12px; background:rgba(110,231,255,.15); color:#6ee7ff; border:1px solid rgba(110,231,255,.25)}
+    .project{margin-bottom:22px}
+    .project h3{margin:0 0 6px; font-size:18px}
+    .project p{color:var(--muted); margin:6px 0}
+    footer{text-align:center; color:var(--muted); padding:28px 0; font-size:14px}
+
+    @media(max-width:768px){
+      header.hero{grid-template-columns:1fr; text-align:center}
+      .headshot{max-width:320px; margin:0 auto}
+      .cta{justify-content:center}
+      .xp{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
-<div class="container">
-  <header class="hero">
-    <div>
-      <span class="badge">✨ Data-Driven Product Manager</span>
-      <h1 class="title">Anoopa Vinod</h1>
-      <p class="subtitle">Building Intelligent Products at the Intersection of AI, Analytics, and User Experience</p>
-      <div class="cta">
-        <a class="btn primary" href="#contact">Get in Touch</a>
-        <a class="btn ghost" href="#projects">View Projects</a>
-      </div>
-    </div>
-    <div class="headshot"><div class="circle"></div></div>
-  </header>
-
-  <nav class="site">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#internships">Internships</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-  </nav>
-
-  <section id="about">
-    <div class="panel">
-      <h2 class="section-title">About Me</h2>
-      <p>Product Manager with a strong foundation in AI, analytics, and operations. Passionate about leveraging machine learning and data science to drive strategic decision-making and build products that scale.</p>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="panel">
-      <h2 class="section-title">Professional Experience</h2>
-      <div class="xp">
-        <div>
-          <div class="where">Accenture</div>
-          <div class="period">2023 – Present</div>
-        </div>
-        <div>
-          <div class="role">Product Manager</div>
-          <ul>
-            <li>Led cross-functional teams to deliver AI-powered analytics solutions</li>
-            <li>Defined product roadmaps aligned with business objectives</li>
-            <li>Collaborated with engineering, design, and data science teams</li>
-          </ul>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <span class="badge">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8"/></svg>
+          Available for new opportunities
+        </span>
+        <h1 class="title">Hi, I'm Anoopa Vinod 👋</h1>
+        <p class="subtitle">Product Manager specializing in AI, mobile, and SaaS</p>
+        <div class="cta">
+          <a class="btn primary" href="https://linkedin.com/in/anoopavinod">Connect on LinkedIn</a>
+          <a class="btn ghost" href="#contact">Get in touch →</a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="headshot">
+        <img src="IMG-4988.jpg" alt="Anoopa Vinod profile photo" style="width:100%; border-radius:16px;" />
+      </div>
+    </header>
 
-  <section id="internships">
-    <div class="panel">
-      <h2 class="section-title">Artificial Intelligence Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?w=400&h=150&fit=crop" alt="Egg production line"/></div>
-          <div class="body">
-            <h3>Egg Detection & Tracking</h3>
-            <p>Computer vision system for automated quality inspection at factory production lines</p>
-            <div class="tags">
-              <span class="tag">Computer Vision</span>
-              <span class="tag">YOLO</span>
-              <span class="tag">Python</span>
+    <nav class="site">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="experience">
+      <div class="panel">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="xp">
+          <div class="when">2023–Present</div>
+          <div class="what">
+            <h3 class="role">Senior Product Manager</h3>
+            <p class="company">TechCorp Inc.</p>
+            <p class="desc">Leading AI-powered mobile app development, resulting in 45% increase in user engagement.</p>
+            <div class="skills">
+              <span class="tag">Product Strategy</span>
+              <span class="tag">AI/ML</span>
+              <span class="tag">Mobile</span>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=150&fit=crop" alt="Brain and child silhouette"/></div>
-          <div class="body">
-            <h3>Autism Detection in Children</h3>
-            <p>AI-powered diagnostic tool using computer vision to assist in early autism detection</p>
-            <div class="tags">
-              <span class="tag">Computer Vision</span>
-              <span class="tag">Deep Learning</span>
-              <span class="tag">Healthcare AI</span>
+
+        <div class="xp">
+          <div class="when">2021–2023</div>
+          <div class="what">
+            <h3 class="role">Product Manager</h3>
+            <p class="company">StartupXYZ</p>
+            <p class="desc">Built and launched B2B SaaS platform serving 10K+ users.</p>
+            <div class="skills">
+              <span class="tag">SaaS</span>
+              <span class="tag">User Research</span>
+              <span class="tag">Agile</span>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <h2 class="section-title" style="margin-top:28px;">Data Science Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=150&fit=crop" alt="Shield and security analytics"/></div>
-          <div class="body">
-            <h3>Fraud Detection in Procurement</h3>
-            <p>Machine learning model to identify and prevent fraudulent procurement activities</p>
-            <div class="tags">
-              <span class="tag">ML</span>
-              <span class="tag">Fraud Detection</span>
-              <span class="tag">Analytics</span>
-            </div>
+    <section id="projects">
+      <div class="panel">
+        <h2 class="section-title">Projects</h2>
+        <div class="project">
+          <h3>AI Recommendation Engine</h3>
+          <p>Machine learning system improving content personalization by 60%</p>
+          <div class="skills">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
           </div>
         </div>
-        <div class="card">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=400&h=150&fit=crop" alt="Medical supplies and analytics"/></div>
-          <div class="body">
-            <h3>Medical Inventory Optimization</h3>
-            <p>ARIMA-based forecasting system for optimizing hospital inventory management</p>
-            <div class="tags">
-              <span class="tag">ARIMA</span>
-              <span class="tag">Time Series</span>
-              <span class="tag">Healthcare</span>
-            </div>
+        <div class="project">
+          <h3>Mobile Payment Integration</h3>
+          <p>Seamless payment flow reducing checkout time by 40%</p>
+          <div class="skills">
+            <span class="tag">React Native</span>
+            <span class="tag">Stripe API</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <div class="panel">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="thumb"></div>
-          <div class="body">
-            <h3>Project Alpha</h3>
-            <p>Innovative solution for complex business challenges</p>
-            <div class="tags">
-              <span class="tag">AI</span>
-              <span class="tag">Product</span>
-            </div>
-          </div>
-        </div>
+    <section id="contact">
+      <div class="panel">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>Interested in working together? Reach out via <a href="https://linkedin.com/in/anoopavinod">LinkedIn</a> or email me at hello@anoopavinod.com</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills">
-    <div class="panel">
-      <h2 class="section-title">Skills & Expertise</h2>
-      <div class="chips">
-        <span class="chip">Product Management</span>
-        <span class="chip">AI/ML</span>
-        <span class="chip">Data Analytics</span>
-        <span class="chip">Computer Vision</span>
-        <span class="chip">Python</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Agile/Scrum</span>
-        <span class="chip">Roadmapping</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="panel">
-      <h2 class="section-title">Let's Connect</h2>
-      <p>Interested in collaborating? Reach out via email or LinkedIn.</p>
-    </div>
-  </section>
-</div>
+    <footer>
+      <p>© 2024 Anoopa Vinod. Built with ❤️</p>
+    </footer>
+  </div>
 </body>
 </html>
