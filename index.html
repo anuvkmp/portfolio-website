@@ -9,28 +9,28 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
   <style>
     :root{
- --bg:#0b1020; --panel:#0f1530; --muted:#9aa3b2; --text:#eaf0ff; --brand:#6ee7ff; --brand2:#7c4dff; --card:#121936; --glow: 0 10px 30px rgba(110,231,255,.25); }
+ --bg:#f0f4f8; --panel:#ffffff; --muted:#64748b; --text:#1e293b; --brand:#0891b2; --brand2:#7c3aed; --card:#f8fafc; --glow: 0 4px 20px rgba(8,145,178,.15); }
     *{box-sizing:border-box}
     html,body{margin:0}
-    body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,77,255,.35), transparent 60%), radial-gradient(1000px 700px at -20% 10%, rgba(110,231,255,.25), transparent 55%), linear-gradient(180deg, #0a0f1e 0%, #0b1020 100%); line-height:1.65; }
-    a{color:var(--brand); text-decoration:none} a:hover{color:#aef2ff}
+    body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,58,237,.12), transparent 60%), radial-gradient(1000px 700px at -20% 10%, rgba(8,145,178,.1), transparent 55%), linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%); line-height:1.65; }
+    a{color:var(--brand); text-decoration:none} a:hover{color:#0e7490}
     .container{max-width:1120px; margin:0 auto; padding:28px}
     header.hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; padding:48px 0 12px; }
-    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #273154; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(18,25,54,.6)}
+    .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid #cbd5e1; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.4px; backdrop-filter: blur(6px); background:rgba(255,255,255,.8)}
     .title{font-size:clamp(28px, 4.6vw, 56px); line-height:1.05; margin:10px 0 8px; font-weight:800; letter-spacing:-.02em}
     .subtitle{color:var(--muted); font-size:clamp(14px, 1.6vw, 18px)}
     .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
-    .btn{padding:12px 18px; border-radius:12px; border:1px solid #2a3564; background:linear-gradient(180deg,#1a2246,#151b3b); color:#eaf0ff; font-weight:600; box-shadow: var(--glow)}
+    .btn{padding:12px 18px; border-radius:12px; border:1px solid #cbd5e1; background:linear-gradient(180deg,#ffffff,#f1f5f9); color:#1e293b; font-weight:600; box-shadow: var(--glow)}
     .btn:hover{transform: translateY(-1px)}
- .btn.primary{background:linear-gradient(180deg,#6ee7ff,#45bfe0); color:#041019; border-color:#55d6f0}
+ .btn.primary{background:linear-gradient(180deg,#0891b2,#0e7490); color:#ffffff; border-color:#0891b2}
  .btn.ghost{background:transparent}
-    .headshot{border-radius:16px; overflow:hidden; background:linear-gradient(135deg, #7c4dff55, #6ee7ff33); border:1px solid #2a3564; box-shadow: var(--glow)}
-    .headshot .circle{aspect-ratio:1/1; width:100%; background: radial-gradient(45% 45% at 60% 40%, #6ee7ff55, transparent 60%), radial-gradient(50% 50% at 30% 70%, #7c4dff55, transparent 60%), linear-gradient(180deg,#121936,#0f1530);}
+    .headshot{border-radius:16px; overflow:hidden; background:linear-gradient(135deg, rgba(124,58,237,.15), rgba(8,145,178,.1)); border:1px solid #cbd5e1; box-shadow: var(--glow)}
+    .headshot .circle{aspect-ratio:1/1; width:100%; background: radial-gradient(45% 45% at 60% 40%, rgba(8,145,178,.2), transparent 60%), radial-gradient(50% 50% at 30% 70%, rgba(124,58,237,.2), transparent 60%), linear-gradient(180deg,#f8fafc,#ffffff);}
  
     nav.site{display:flex; gap:12px; margin:8px 0 0}
-    nav.site a{padding:8px 12px; border:1px solid #2a3564; border-radius:10px; background:rgba(18,25,54,.5)}
+    nav.site a{padding:8px 12px; border:1px solid #cbd5e1; border-radius:10px; background:rgba(255,255,255,.8)}
     section{margin:28px 0}
- .panel{background:var(--panel); border:1px solid #24305a; border-radius:16px; padding:22px; box-shadow: var(--glow)}
+ .panel{background:var(--panel); border:1px solid #e2e8f0; border-radius:16px; padding:22px; box-shadow: var(--glow)}
  h2.section-title{font-size:22px; letter-spacing:.3px; margin:0 0 14px; font-weight:700}
     .xp{display:grid; grid-template-columns: 1fr 3.2fr; gap:18px; margin:0 0 22px; padding:0}
     .xp .when{color:var(--muted); font-size:14px}
@@ -39,12 +39,11 @@
     .company{color:var(--muted); font-size:15px; margin:0 0 6px}
     .desc{font-size:15px; margin:8px 0}
     .skills{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px}
-    .tag{padding:4px 10px; border-radius:999px; font-size:12px; background:rgba(110,231,255,.15); color:#6ee7ff; border:1px solid rgba(110,231,255,.25)}
+    .tag{padding:4px 10px; border-radius:999px; font-size:12px; background:rgba(8,145,178,.15); color:#0e7490; border:1px solid rgba(8,145,178,.25)}
     .project{margin-bottom:22px}
     .project h3{margin:0 0 6px; font-size:18px}
     .project p{color:var(--muted); margin:6px 0}
     footer{text-align:center; color:var(--muted); padding:28px 0; font-size:14px}
-
     @media(max-width:768px){
       header.hero{grid-template-columns:1fr; text-align:center}
       .headshot{max-width:320px; margin:0 auto}
@@ -58,7 +57,7 @@
     <header class="hero">
       <div>
         <span class="badge">
-          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8"/></svg>
+          <svg fill="currentColor" height="12" viewbox="0 0 16 16" width="12"><circle cx="8" cy="8" r="8"></circle></svg>
           Available for new opportunities
         </span>
         <h1 class="title">Hi, I'm Anoopa Vinod 👋</h1>
@@ -69,20 +68,17 @@
         </div>
       </div>
       <div class="headshot">
-        <img src="IMG-4988.jpg" alt="Anoopa Vinod profile photo" style="width:100%; border-radius:16px;" />
+        <img src="IMG-4988.jpg" alt="Anoopa Vinod profile photo" style="width:100%; border-radius:16px;"/>
       </div>
     </header>
-
     <nav class="site">
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-
     <section id="experience">
       <div class="panel">
         <h2 class="section-title">Experience</h2>
-
         <div class="xp">
           <div class="when">2023–Present</div>
           <div class="what">
@@ -96,7 +92,6 @@
             </div>
           </div>
         </div>
-
         <div class="xp">
           <div class="when">2021–2023</div>
           <div class="what">
@@ -112,7 +107,6 @@
         </div>
       </div>
     </section>
-
     <section id="projects">
       <div class="panel">
         <h2 class="section-title">Projects</h2>
@@ -134,16 +128,14 @@
         </div>
       </div>
     </section>
-
     <section id="contact">
       <div class="panel">
         <h2 class="section-title">Get in Touch</h2>
         <p>Interested in working together? Reach out via <a href="https://linkedin.com/in/anoopavinod">LinkedIn</a> or email me at hello@anoopavinod.com</p>
       </div>
     </section>
-
     <footer>
-      <p>© 2024 Anoopa Vinod. Built with ❤️</p>
+      © 2024 Anoopa Vinod. Built with ❤️
     </footer>
   </div>
 </body>
